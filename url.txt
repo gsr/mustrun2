@@ -1,0 +1,6 @@
+This is being served as an application on The Cornell Sun's domain.
+http://mustrun.cornellsun.com
+
+Once you arrive please choose "Log In" in the upper right corner and use the credentials: 
+username: mustruntest (@cornellsun.com)
+password: info3300

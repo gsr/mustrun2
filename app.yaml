@@ -1,0 +1,17 @@
+application: mustrun2sun
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /stylesheets
+  static_dir: static/stylesheets
+
+- url: /javascripts
+  static_dir: static/javascripts
+
+- url: /images
+  static_dir: static/images
+  
+- url: .*
+  script: main.py

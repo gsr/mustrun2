@@ -1,0 +1,223 @@
+/**
+ * Styles for MustRun 2.0
+ * By G. Scott Russ // gsr8@cornell.edu // gscottruss@cornellsun.com
+ */
+
+body {
+  background: white;
+  color: black;
+}
+
+hr {
+  margin: 3px 0;
+  background: #777;
+  color: #777;
+}
+
+input[type="checkbox"]{
+  top: 0;
+}
+
+.mustrun-error{
+  border: 1px solid red;
+  background: #faa;
+}
+
+/** HEADER -- NAVIGATION **/
+.nav-not-dashbaord{
+  border-bottom: 1px solid black;
+}
+#settings {
+  text-align: right;
+}
+#settings ul {
+  margin: 0;
+  padding: 0;
+  padding-right: 5px;
+}
+#settings ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline;
+}
+#settings ul li a {
+  padding: 5px;
+  text-decoration: none;
+}
+#settings ul li a:hover {
+  text-decoration: underline;
+}
+
+#sections {
+  border-bottom: 3px solid white;
+  background: #777;
+  text-align: center;
+}
+#sections .container {
+  text-align: left;
+}
+#sections .container ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 3px;
+  border-left: 3px solid white;
+}
+#sections .container ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline;
+  margin-left: -3px;
+}
+#sections .container ul li.selected {
+  
+}
+#sections .container ul li button {
+  color: white;
+  margin: 0;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #777;
+  border: 0;
+  border-right: 3px solid white;
+  cursor: pointer;
+}
+#sections .container ul li button:hover {
+  background: #888;
+}
+#sections .container ul li button.selected {
+  color: #777;
+  font-weight: bold;
+  background: white;
+}
+
+/** DASHBOARD -- CALENDAR **/
+#calendar {
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  text-align: center;
+  margin-top: 10px;
+}
+#calendar button {
+  text-decoration: none;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 0;
+  background: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+#calendar  button:hover {
+  text-decoration: underline;
+  background: #eee;
+}
+#calendar h2 {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/** DASHBOARD WEEK VIEW **/
+#week {
+}
+#week .dotw {
+  padding-top: 10px;
+  text-align: center;
+}
+#week .today {
+  background: #ffe;
+}
+#week .dotw .date h3, #week .dotw .deskers h4 { 
+  margin-bottom: 0;
+}
+#week .dotw .date, #week .dotw .deskers {
+  padding: 3px 0;
+  border-bottom: 3px solid black;
+}
+#week .dotw .deskers .desker {
+  border: 1px solid #777;
+  text-align: left;
+  padding: 3px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  margin-bottom: 2px;
+  background: white;
+  font-size: smaller;
+}
+#week .dotw .assignments {
+  padding: 5px 0;
+  padding-top: 0;
+  min-height: 300px;
+  border-bottom: 3px solid black;
+}
+#week .dotw .assignments .assignment {
+  padding: 3px;
+  border: 1px solid #777;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  background: white;
+  text-align: left;
+}
+#week .dotw .assignments .assignment:hover {
+  background: #fafafa;
+}
+hr {
+  margin: 3px 0;
+  background: #777;
+  color: #777;
+}
+#week .dotw .actions {
+  text-align: right;
+}
+#week .dotw>.actions {
+  padding-top: 3px;
+}
+.actions button, button.mustrun {
+  text-align: center;
+  border: 1px solid #777;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  color: #777;
+  text-transform: uppercase;
+  font-size: 6pt;
+  font-weight: bold;
+  background: white;
+  margin-left: 2px;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+.actions button:hover, button.mustrun:hover {
+  background: #eee;
+}
+#week .dotw .deskers .actions {
+  float: right;
+}
+#week .dotw .deskers h4 .actions button, #week .dotw>.actions button {
+  margin-right: 4px;
+}
+
+/** ASSIGNMENT CREATE/EDIT **/
+.mustrun-widget-shadow {
+  width: 812px;
+  position: absolute;
+  top: 40px;
+}
+.mustrun-widget-content {
+  position: absolute; 
+  width: 790px;
+  top: 40px; 
+  padding: 10px;
+}
+#asgnmnt-form .actions {
+  float: right;
+}
+#asgnmnt-form h2 {
+  margin-bottom: 0px;
+}
+#asgnmnt-form textarea {
+  height: 100px;
+}

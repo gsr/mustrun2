@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <title>MustRun</title>
+        <meta name="google-site-verification" content="kD2aENkS9LDy976GGzkATJutI_dEI-ECWW2PwzGNG8c" />
+        <link rel="stylesheet" href="/stylesheets/jqueryui/jquery-ui-1.8.1.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print" />
+        <!--[if lt IE 8]>
+            <link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" />
+        <![endif]-->
+        <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen, projection" />
+        <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAwFqZsddF5bEEVd7sS4Qu9BT4wXoJl4FOzMEroIYPQSJuc4mTURR45g4t3ucudo9y5MHmuD-xGlFD-w"></script>
+        <script type="text/javascript">
+           google.load("jquery",1);
+           google.load("jqueryui",1);
+        </script>
+        <!--<script type="text/javascript" src="/javascripts/script.js"></script>-->
+        <script type="text/javascript" src="/javascripts/script.js"></script>
+    </head>
+    <body>
+        <input type="hidden" id="start_day" value="{{ start_day|date:"Y-m-d" }}" />
+        <input type="hidden" id="end_day" value="{{ end_day|date:"Y-m-d" }}" />
+        <input type="hidden" id="section" value="{{ prefSection }}" />
+        <div id="navigation">
+            <div id="settings">
+                <ul>
+                    <li><a href="/preferences" title="Change My Preferences">Preferences</a></li>
+                    <li><a href="/admin" title="Administer MustRun">Administer</a></li>
+                    {% if user %}
+                    <li>Logged in as {{ user.nickname }} <a href="{{ logout_url }}" title="Log Out of MustRun">Log Out</a></li>
+                    {% else %}
+                    <li><a href="{{ login_url }}" title="Log In to MustRun">Log In</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div id="sections">
+                <div class="container">
+                    <ul>
+                        {% for section in sections %}
+                        <li id="{{ section.key }}"><button name="{{ section.name }}">{{ section.name }}</button></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="dashboard-container" class="container">
+            <div id="calendar">
+                <button id="prev-week" class="span-4">&laquo; Previous Week</button>
+                <div id="date-header" class="span-16">
+                    <h2></h2>
+                </div>
+                <button id="next-week" class="span-4 last">Next Week &raquo;</button>
+                <br class="clear" />
+            </div>
+            <div id="week">
+                <!--<div id="overlay-container">
+                    <div class="ui-overlay"><div class="ui-widget-shadow ui-corner-all" style="width: 812px; height: 252px; position: absolute; left: 50px; top: 40px;"></div></div>
+                    <div style="position: absolute; width: 790px; height: 230px;left: 50px; top: 40px; padding: 10px;" class="ui-widget ui-widget-content ui-corner-all container"> 
+                        <div id="asgnmnt-form">
+                    	    <h2>
+                        	    <div class="actions">
+                    	            <button>Save</button><button>Cancel</button>
+                    	        </div>
+                    	        New Assignment
+                    	    </h2>
+                    	    <hr />
+                    	    <div class="span-10">
+                    	        <fieldset>
+                    	            <legend>Information</legend>
+                    	            <label>Assignment Title</label><br />
+                            	    <input type="text" class="title span-9" /><br />
+                            	    <label>Status</label><br />
+                            	    <input type="text" class="text span-9" /><br />
+                        	        <label>Description</label><br />
+                            	    <textarea class="span-9"></textarea><br />
+                        	    </fieldset>
+                        	    <fieldset>
+                        	        <legend>Options</legend>
+                        	        <label>Google Docs</label><br />
+                        	        <input type="checkbox" />Create Google Doc for Assignment<br />
+                        	        <br />
+                        	        <label>Derivative Assignments</label><br />
+                        	        <input type="checkbox" />Create a Photo Assignment<br />
+                        	        <input type="checkbox" />Create a Design Assignment<br />
+                        	    </fieldset>
+                    	    </div>
+                    	    <div class="span-10 last">
+                    	        <fieldset>
+                    	            <legend>Author(s)</legend>
+                    	            Enter the email address of the author to assign and then click Add.
+                    	            <input type="text" class="text" /><button>Add</button>
+                    	        </fieldset>
+                    	        <fieldset>
+                    	            <legend>Due Date: <input type="text" id="date" disabled="disabled"/></legend>
+                        	        <div id="datepicker"></div>
+                    	        </fieldset>
+                    	    </div>
+                    	    <hr />
+                    	    <div class="actions">
+                	            <button>Save</button><button>Cancel</button>
+                	        </div>
+                	        <br class="clear" />
+            	        </div>
+                    </div>
+                </div>-->
+                <!--
+                <div id="sunday" class="dotw span-4">
+                    <div class="date">
+                        <h3>Sunday</h3>
+                        April 25
+                    </div>
+                    <div class="deskers">
+                        <h4>
+                            <div class="actions">
+                                <button onclick="addDeskerField('sunday')">Add</button>
+                            </div>
+                            Deskers:
+                        </h4>
+                        <div class="desker">
+                            <div class="actions">
+                                <button>x</button>
+                            </div>
+                            Ben Gitlin<br class="clear" />
+                        </div>
+                        <div class="desker">
+                            <div class="actions">
+                                <button>x</button>
+                            </div>
+                            Dani Neuharth-Keusch<br class="clear" />
+                        </div>
+                    </div>
+                    <div class="assignments">
+                        <div class="actions">
+                            <button>Add Assignment</button>
+                        </div>
+                        <div class="assignment">
+                            <h6 class="title">Four Cornell Profs named to Academy of Arts &amp; Sciences</h6>
+                            <hr />
+                            <div class="author">Jeff Stein</div>
+                            <div class="status">Status: <strong>TBP</strong></div>
+                            <hr />
+                            <div class="actions"><button>Edit</button><button>Remove</button></div>
+                        </div>
+                        <div class="assignment">
+                            <p>2 This is an assignment. I'd like to be dragged and dropped. Please.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dotw span-4">
+                    <div class="date">
+                        <h3>Monday</h3>
+                        April 26
+                    </div>
+                    <div class="deskers">
+                        <h4>Deskers:</h4>
+                        <div class="desker">
+                            Ben Gitlin
+                        </div>
+                        <div class="desker">
+                            Dani Neuharth-Keusch
+                        </div>
+                    </div>
+                    <div class="assignments">
+                        <div class="assignment">
+                            <p>1 This is an assignment. I'd like to be dragged and dropped. Please.</p>
+                        </div>
+                        <div class="assignment">
+                            <p>2 This is an assignment. I'd like to be dragged and dropped. Please.</p>
+                        </div>
+                        <div class="assignment">
+                            <p>3 This is an assignment. I'd like to be dragged and dropped. Please.</p>
+                        </div>
+                        <div class="assignment">
+                            <p>4 This is an assignment. I'd like to be dragged and dropped. Please.</p>
+                        </div>
+                        <div class="assignment">
+                            <p>5 This is an assignment. I'd like to be dragged and dropped. Please.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dotw span-4">
+                    <div class="date">
+                        <h3>Tuesday</h3>
+                        April 27
+                    </div>
+                    <div class="deskers">
+                        <h4>Deskers:</h4>
+                        <div class="desker">
+                            Ben Gitlin
+                        </div>
+                        <div class="desker">
+                            Dani Neuharth-Keusch
+                        </div>
+                    </div>
+                    <div class="assignments">
+                        <div class="assignment">
+                            <p>1 This is an assignment. I'd like to be dragged and dropped. Please.</p>
+                        </div>
+                        <div class="assignment">
+                            <p>2 This is an assignment. I'd like to be dragged and dropped. Please.</p>
+                        </div>
+                        <div class="assignment">
+                            <p>3 This is an assignment. I'd like to be dragged and dropped. Please.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dotw span-4">
+                    <div class="date">
+                        <h3>Wednesday</h3>
+                        April 28
+                    </div>
+                    <div class="deskers">
+                        <h4>Deskers:</h4>
+                        <div class="desker">
+                            Ben Gitlin
+                        </div>
+                        <div class="desker">
+                            Dani Neuharth-Keusch
+                        </div>
+                    </div>
+                    <div class="assignments">
+                        
+                    </div>
+                </div>
+                <div class="dotw span-4">
+                    <div class="date">
+                        <h3>Thursday</h3>
+                        April 29
+                    </div>
+                    <div class="deskers">
+                        <h4>Deskers:</h4>
+                        <div class="desker">
+                            Ben Gitlin
+                        </div>
+                    </div>
+                    <div class="assignments">
+                        
+                    </div>
+                </div>
+                <div class="dotw today span-4 last">
+                    <div class="date">
+                        <h3>Friday/Saturday</h3>
+                        April 30, May 1
+                    </div>
+                    <div class="deskers">
+                        <h4>Deskers:</h4>
+                    </div>
+                    <div class="assignments">
+                        
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </body>
+</html>

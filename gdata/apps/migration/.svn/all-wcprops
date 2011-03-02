@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/apps/migration
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/apps/migration/__init__.py
+END
+service.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/apps/migration/service.py
+END

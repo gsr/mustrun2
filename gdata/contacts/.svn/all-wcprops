@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/contacts
+END
+data.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/contacts/data.py
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/contacts/client.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/contacts/__init__.py
+END
+service.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/contacts/service.py
+END

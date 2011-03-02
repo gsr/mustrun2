@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid
+END
+store.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/store.py
+END
+middleware.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/middleware.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/__init__.py
+END
+handlers.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/handlers.py
+END
+users.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/users.py
+END

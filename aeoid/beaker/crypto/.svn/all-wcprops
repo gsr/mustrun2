@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/beaker/crypto
+END
+pbkdf2.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/beaker/crypto/pbkdf2.py
+END
+pycrypto.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/beaker/crypto/pycrypto.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/beaker/crypto/__init__.py
+END
+jcecrypto.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/beaker/crypto/jcecrypto.py
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/templates
+END
+failure.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/templates/failure.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/templates/login.html
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/templates/error.html
+END
+logout.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/templates/logout.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/templates/base.html
+END

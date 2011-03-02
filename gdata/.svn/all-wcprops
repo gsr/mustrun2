@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata
+END
+core.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/core.py
+END
+test_data.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/test_data.py
+END
+gauth.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/gauth.py
+END
+data.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/data.py
+END
+urlfetch.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/urlfetch.py
+END
+sample_util.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/sample_util.py
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/client.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/__init__.py
+END
+service.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/service.py
+END
+auth.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/auth.py
+END
+test_config.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/test_config.py
+END

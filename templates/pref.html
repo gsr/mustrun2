@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>MustRun Preferences</title>
+        <link rel="stylesheet" href="/stylesheets/jqueryui/jquery-ui-1.8.1.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print" />
+        <!--[if lt IE 8]>
+            <link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" />
+        <![endif]-->
+        <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen, projection" />
+        <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAwFqZsddF5bEEVd7sS4Qu9BT4wXoJl4FOzMEroIYPQSJuc4mTURR45g4t3ucudo9y5MHmuD-xGlFD-w"></script>
+        <script type="text/javascript">
+           google.load("jquery",1);
+           google.load("jqueryui",1)
+        </script>
+        <!--<script type="text/javascript" src="/javascripts/script.js"></script>-->
+        <script type="text/javascript" src="/javascripts/script.js"></script>
+    </head>
+    <body>
+        <div id="navigation" class="nav-not-dashboard">
+            <div id="settings">
+                <ul>
+                    <li><a href="/" title="Go to the Dashboard">Dashboard</a></li>
+                    <li><a href="/admin" title="Administer MustRun">Administer</a></li>
+                    {% if user %}
+                    <li>Logged in as {{ user.nickname }} <a href="{{ logout_url }}" title="Log Out of MustRun">Log Out</a></li>
+                    {% else %}
+                    <li><a href="{{ login_url }}" title="Log In to MustRun">Log In</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <h2>My Preferences</h2>
+            <form action="/cr_mod_user_prefs" method="get">
+                <ul>
+                    <li>Preferred Section: <input id="prefSection" name="prefSection" type="text" value = "{{ prefSection }}" /></li>
+                    <li>Phone #: <input id="phone" name="phone" type="text" value = "{{ phone }}" /></li>
+                    <li><input type="submit" value="Submit your Preferences!" /></li>
+                <ul>
+            </form>
+        </div>
+    </body>
+</html>

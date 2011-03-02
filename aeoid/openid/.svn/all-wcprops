@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid
+END
+oidutil.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/oidutil.py
+END
+dh.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/dh.py
+END
+urinorm.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/urinorm.py
+END
+association.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/association.py
+END
+extension.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/extension.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/__init__.py
+END
+cryptutil.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/cryptutil.py
+END
+sreg.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/sreg.py
+END
+fetchers.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/fetchers.py
+END
+kvform.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/kvform.py
+END
+message.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mustrun/!svn/ver/52/mustrun2sun/aeoid/openid/message.py
+END

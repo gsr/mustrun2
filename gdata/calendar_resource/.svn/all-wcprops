@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/calendar_resource
+END
+data.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/calendar_resource/data.py
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/calendar_resource/client.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mustrun/!svn/ver/57/mustrun2sun/gdata/calendar_resource/__init__.py
+END
